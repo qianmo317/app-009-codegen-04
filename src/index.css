@@ -20,4 +20,8 @@ input, button {
   body {
     background: #fff;
   }
+  /* 报名本子：打印开课前名单时隐藏操作栏 */
+  .no-print {
+    display: none !important;
+  }
 }

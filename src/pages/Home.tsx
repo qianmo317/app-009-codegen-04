@@ -32,7 +32,23 @@ export default function Home() {
 
   return (
     <div style={{ padding: 24, maxWidth: 960, margin: '0 auto' }}>
-      <h1 style={{ fontSize: 24, marginBottom: 16 }}>我的图解</h1>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+        <h1 style={{ fontSize: 24, margin: 0 }}>我的图解</h1>
+        <a
+          href="#/classes"
+          style={{
+            padding: '8px 16px',
+            borderRadius: 4,
+            border: '1px solid #2471a3',
+            color: '#2471a3',
+            textDecoration: 'none',
+            fontSize: 14,
+            background: '#fff',
+          }}
+        >
+          📒 报名本子
+        </a>
+      </div>
       <div style={{ display: 'flex', gap: 12, marginBottom: 24, alignItems: 'center' }}>
         <input type="number" value={newCols} onChange={(e) => setNewCols(Number(e.target.value))} style={{ width: 70, padding: '6px 8px' }} placeholder="宽" />
         <span>×</span>
