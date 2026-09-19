@@ -32,7 +32,15 @@ export default function Home() {
 
   return (
     <div style={{ padding: 24, maxWidth: 960, margin: '0 auto' }}>
-      <h1 style={{ fontSize: 24, marginBottom: 16 }}>我的图解</h1>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+        <h1 style={{ fontSize: 24, margin: 0 }}>我的图解</h1>
+        <button
+          onClick={() => navigate('/classes')}
+          style={{ padding: '6px 14px', borderRadius: 4, border: '1px solid #b3540e', background: '#fff', color: '#b3540e', cursor: 'pointer', fontSize: 14 }}
+        >
+          编织课报名本 →
+        </button>
+      </div>
       <div style={{ display: 'flex', gap: 12, marginBottom: 24, alignItems: 'center' }}>
         <input type="number" value={newCols} onChange={(e) => setNewCols(Number(e.target.value))} style={{ width: 70, padding: '6px 8px' }} placeholder="宽" />
         <span>×</span>
